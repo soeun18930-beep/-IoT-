@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Wearable Synthetic Generator
+----------------------------
+- 배치 모드(batch): 하루치 데이터를 일괄 CSV로 생성
+- 스트림 모드(stream): interval_sec 간격으로 실시간 append
+- 출력 컬럼: ts, heart_rate, activity_level, occupancy_est
+"""
+
+
+
 import argparse, time, os
 from datetime import datetime, timedelta
 import numpy as np
